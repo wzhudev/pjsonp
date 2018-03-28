@@ -4,7 +4,7 @@
 
 ## Installation
 
-This repo is not on npm yet, so you can just clone `index.js` for now.
+This repo is not on npm yet, so just copy `index.js`.
 
 ## API
 
@@ -30,16 +30,16 @@ pjsonp(url, params, options)
 ```
 
 * `url`: url to fetch data. It should look like `http://somehostname[:someport]/to/some/path[?with=true&orWithoutQueries=false]`
-* `params`: an plain object contains parameters. We will parse them into `url` for you. But if you don't have parameters or have enclosed them in url, that's fine. Just ignore `params`.
+* `params`: an plain object that contains parameters. promise-jsonp will parse them into `url` for you. But if you don't have parameters or have enclosed them in `url`, that's fine. Just ignore `params`.
 * `options`:
   * `prefix`: prefix of jsonp callback function. Default: `__jp`.
-  * `timeout`: literal meaning. Default: `60000`, in millisecond.
+  * `timeout`: literal meaning. Default: `60000`, in milliseconds.
   * `name`: the name of callback function. If set, `prefix` would be invalid. Default: `undefined`.
   * `param`: name of the query string parameter to specify the callback. Default: `callback`.
 
 ## Test
 
-Test with Jest. Just run `npm run test`.
+Test with Jest. Run `npm run test`.
 
 ## LICENSE
 
