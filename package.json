@@ -1,0 +1,23 @@
+{
+  "name": "promise-jsonp",
+  "version": "1.0.0",
+  "description": "JSONP wrapped in Promise API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wendzhue/promise-jsonp.git"
+  },
+  "keywords": ["jsonp", "promise", "util"],
+  "author": "Wendell Hu <wendzhue@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wendzhue/promise-jsonp/issues"
+  },
+  "homepage": "https://github.com/wendzhue/promise-jsonp#readme",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
