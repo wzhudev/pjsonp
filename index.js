@@ -43,8 +43,6 @@ function pjsonp(url, params = {}, options) {
   options = Object.assign({}, defaultOptions, options)
   const callbackName = options.name || options.prefix + uid++
 
-  console.log(options)
-
   let timer
   let script
   let target
