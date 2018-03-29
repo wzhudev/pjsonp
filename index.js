@@ -31,11 +31,13 @@ function doNothing() {}
  * @param {Object} params
  * @returns {Promise}
  */
-function pjsonp(url, params = {}, options = {}) {
+function pjsonp(url, params = {}, options) {
   if (!options) {
     options = params
     params = {}
   }
+
+  if (!options) options = {}
 
   // merge default and user provided options
   options = Object.assign({}, defaultOptions, options)

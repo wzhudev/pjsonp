@@ -24,3 +24,15 @@ test('Named callback', () => {
     expect(data).toEqual(obj)
   })
 })
+
+test('Without params', () => {
+  pjsonp(url + '?beep=boop&yo=dawg', { name: 'namedCb' }).then(data => {
+    expect(data).toEqual(obj)
+  })
+})
+
+test('Without params or options', () => {
+  pjsonp(url + '?beep=boop&yo=dawg').then(data => {
+    expect(data).toEqual(obj)
+  })
+})
