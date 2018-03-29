@@ -31,7 +31,7 @@ pjsonp(url, params, options)
 
 * `url`: url to fetch data. It should look like `http://somehostname[:someport]/to/some/path[?with=true&orWithoutQueries=false]`
 * `params` (optional): an plain object that contains parameters. promise-jsonp will parse them into `url` for you. But if you don't have parameters or have enclosed them in `url`, that's fine. Just ignore `params`.
-* `options` (optional):
+* `options` (optional, but you can't just provide `params` without `options`):
   * `prefix`: prefix of jsonp callback function. Default: `__jp`.
   * `timeout`: literal meaning. Default: `60000`, in milliseconds.
   * `name`: the name of callback function. If set, `prefix` would be invalid. Default: `undefined`.
