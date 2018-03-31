@@ -1,10 +1,12 @@
-# promise-jsonp
+# pjsonp
 
 > jsonp with elegent Promise API.
 
 ## Installation
 
-This repo is not on npm yet, so just copy `index.js`.
+```sh
+npm install pjsonp --save
+```
 
 ## API
 
@@ -30,7 +32,7 @@ pjsonp(url, params, options)
 ```
 
 * `url`: url to fetch data. It should look like `http://somehostname[:someport]/to/some/path[?with=true&orWithoutQueries=false]`
-* `params` (optional): an plain object that contains parameters. promise-jsonp will parse them into `url` for you. But if you don't have parameters or have enclosed them in `url`, that's fine. Just ignore `params`.
+* `params` (optional): an plain object that contains parameters. Considering jsonp is all about 'GET', promise-jsonp will parse them into `url` for you. But if you don't have parameters or have enclosed them in `url`, that's fine. Just ignore `params`.
 * `options` (optional, but you can't just provide `params` without `options`):
   * `prefix`: prefix of jsonp callback function. Default: `__jp`.
   * `timeout`: literal meaning. Default: `60000`, in milliseconds.
