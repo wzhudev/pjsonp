@@ -1,5 +1,5 @@
 {
-  "name": "promise-jsonp",
+  "name": "pjsonp",
   "version": "1.0.0",
   "description": "JSONP wrapped in Promise API.",
   "main": "index.js",
