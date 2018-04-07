@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/wendzhue/promise-jsonp.git"
   },
-  "keywords": ["jsonp", "promise", "util"],
+  "keywords": [
+    "jsonp",
+    "promise",
+    "util"
+  ],
   "author": "Wendell Hu <wendzhue@gmail.com>",
   "license": "MIT",
   "bugs": {
