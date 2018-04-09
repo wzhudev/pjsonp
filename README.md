@@ -41,7 +41,9 @@ pjsonp(url, params, options)
 
 ## Test
 
-Test with Jest. Run `npm run test`.
+~~Test with Jest. Run `npm run test`.~~
+
+**Due to some unknown problems, I can't test it with Jest. So I wrote a `.html` to test it in browsers manually. Anyone knows why Jest just won't work?**
 
 ## LICENSE
 

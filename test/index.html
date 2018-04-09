@@ -17,12 +17,6 @@
       timeout: 60000,
       param: 'callback'
     }
-    const url = 'http://jsfiddle.net/echo/jsonp/'
-    const obj = {
-      beep: 'boop',
-      yo: 'dawg'
-    }
-
     function doNothing() { }
 
     /**
@@ -103,7 +97,13 @@
         }
       })
     }
-
+  </script>
+  <script>
+    const url = 'http://jsfiddle.net/echo/jsonp/'
+    const obj = {
+      beep: 'boop',
+      yo: 'dawg'
+    }
     window.onload = function () {
       pjsonp(url, obj, {}).then((data) => {
         console.log(data)
